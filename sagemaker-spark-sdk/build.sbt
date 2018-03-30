@@ -82,3 +82,10 @@ pomExtra := (
     </developer>
   </developers>
   )
+
+// publish docs
+enablePlugins(GhpagesPlugin)
+git.remoteRepo := "git@github.com:aws/sagemaker-spark.git"
+
+enablePlugins(SiteScaladocPlugin)
+siteSubdirName in SiteScaladoc := ""
